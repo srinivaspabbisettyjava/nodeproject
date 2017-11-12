@@ -1,0 +1,9 @@
+var app = require('./app'); // nearby we have app.js file
+var port = process.env.PORT || 3000; // for port .. which port we want to use
+// from here our program wil start
+// as your these are simple js file
+// "./" means js file nearby the file you are watching
+var server = app.listen(port, function() {
+    console.log('Express server listening on port ' + port);
+    // fromm here will server start our server node express
+});
